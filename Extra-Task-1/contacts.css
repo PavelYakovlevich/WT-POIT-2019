@@ -1,0 +1,170 @@
+<<<<<<< HEAD
+body{
+    background-color: #5a9696;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #0b272d;    
+}
+
+.nav-bar a:hover{
+    color: red;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+}
+
+#logo-pict{
+    width: 100px;
+    height: 100px;
+}
+
+.page-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #0b272d;
+    font-size: 4vh;
+    font-weight: bold;
+    min-height: 20%;
+    height: auto;
+    width: 100%;
+}
+
+footer{
+    justify-self: flex-end;
+    height: 10vh;
+}
+.inner-footer{
+    text-align: center;
+    font-size: 20px;
+}
+
+article{
+    background-color: #d6e4ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+    width: 100%;
+}
+
+article h1{
+    font-size: 40px;
+    color: #626c7a;
+    /* padding: 0px; */
+    /* margin: 0px; */
+}
+
+article h2{
+    color: #2288a8;
+}
+
+article div section p{
+    color: #0b272d;
+    font-size : 25px;
+    margin-bottom: 0px;
+=======
+body{
+    background-color: #5a9696;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #0b272d;    
+}
+
+.nav-bar a:hover{
+    color: red;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+}
+
+#logo-pict{
+    width: 100px;
+    height: 100px;
+}
+
+.page-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #0b272d;
+    font-size: 4vh;
+    font-weight: bold;
+    min-height: 20%;
+    height: auto;
+    width: 100%;
+}
+
+footer{
+    justify-self: flex-end;
+    height: 10vh;
+}
+.inner-footer{
+    text-align: center;
+    font-size: 20px;
+}
+
+article{
+    background-color: #d6e4ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+    width: 100%;
+}
+
+article h1{
+    font-size: 40px;
+    color: #626c7a;
+    /* padding: 0px; */
+    /* margin: 0px; */
+}
+
+article h2{
+    color: #2288a8;
+}
+
+article div section p{
+    color: #0b272d;
+    font-size : 25px;
+    margin-bottom: 0px;
+>>>>>>> 362a365b32ce5c3226849f6a12acde5a3a935133
+}

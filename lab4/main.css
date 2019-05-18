@@ -1,0 +1,94 @@
+<<<<<<< HEAD
+.task-block, p{
+       font-size: 40px;
+       margin: 10px;
+       margin-left: 0px;
+       padding: 10px;
+}
+
+.task-block{
+    border: 10px solid black; 
+    width: 100%;
+}
+
+.task-text{
+    border: 10px solid black; 
+}
+
+h1{
+    font-size: 100px;
+}
+
+#mainString{
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#btnMain{  
+    
+    height: 100px;
+    width: 100%;
+}
+
+.result{
+    margin: 10px;
+    background-color: black;
+    font-size: 30px;
+    color: red;
+}
+
+#inputString{
+    color: royalblue;
+}
+
+#outputString{
+    color: green;
+=======
+.task-block, p{
+       font-size: 40px;
+       margin: 10px;
+       margin-left: 0px;
+       padding: 10px;
+}
+
+.task-block{
+    border: 10px solid black; 
+    width: 100%;
+}
+
+.task-text{
+    border: 10px solid black; 
+}
+
+h1{
+    font-size: 100px;
+}
+
+#mainString{
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#btnMain{  
+    
+    height: 100px;
+    width: 100%;
+}
+
+.result{
+    margin: 10px;
+    background-color: black;
+    font-size: 30px;
+    color: red;
+}
+
+#inputString{
+    color: royalblue;
+}
+
+#outputString{
+    color: green;
+>>>>>>> 362a365b32ce5c3226849f6a12acde5a3a935133
+}

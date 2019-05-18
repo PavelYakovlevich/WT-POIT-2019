@@ -1,0 +1,106 @@
+
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    height: 10vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/prekol.jpg);
+    padding: 0px; 
+    margin: 0px;
+}
+
+
+li{
+    /* display: flex; */
+    justify-content: column;
+}
+
+li img{
+    width: 150px;
+    height: 150px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #0b272d;    
+}
+
+.nav-bar a:hover{
+    color: red;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+}
+
+#logo-pict{
+    width: 100px;
+    height: 100px;
+}
+
+.page-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #0b272d;
+    font-size: 4vh;
+    font-weight: bold;
+    min-height: 20%;
+    height: auto;
+    width: 100%;
+}
+
+.inner-article{
+    text-align: center;
+    font-size: 20px;
+}
+
+.certificates{
+    height: 60vh;
+    max-height: auto;
+}
+
+.certificates ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: wrap;
+    overflow: visible;
+}
+
+.certificates p{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+footer{
+    justify-self: flex-end;
+    min-height: 10%;
+}
+.inner-footer{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
