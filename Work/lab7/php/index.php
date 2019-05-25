@@ -2,7 +2,6 @@
     session_start();
     if(isset($_SESSION['captcha']) && !empty($_POST['captcha'])){
         if(md5($_POST['captcha']) == $_SESSION['captcha']){
-            require_once('Mailer.php');
             if(mail($_POST['email'], $_POST['title'], $_POST['message'], ''))
                 echo '<h1>Succes</h1>';
             else    
