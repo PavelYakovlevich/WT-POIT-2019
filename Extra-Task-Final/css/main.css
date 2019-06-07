@@ -1,0 +1,15 @@
+.nav-bar nav a:hover{
+    color: red;
+}
+
+.nav-bar nav a{
+    text-decoration: none;
+}
+
+.input_wrong{
+    background-color: lightcoral;
+}
+
+.input_right{
+    background-color: lightgreen;
+}

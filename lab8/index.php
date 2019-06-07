@@ -17,8 +17,8 @@
 
     require_once('./MainFunctions.php');
     $user_agent = $_SERVER['HTTP_USER_AGENT'];
-    $user_os = getOS($user_agent);
-    // $user_os = 'Ubuntu';
+    // $user_os = getOS($user_agent);
+    $user_os = 'Kostya Hitov';
     $stat_helper = new StatHelper();
     $stat_helper->connect(HOST, USER, PASSWORD, DB);
     $stat_helper->refresh_stats(TABLE_NAME, $user_os);

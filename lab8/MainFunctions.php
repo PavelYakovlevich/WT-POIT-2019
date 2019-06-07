@@ -72,7 +72,7 @@ class StatHelper{
     } 
 
     function get_table($table_name){
-        $result = mysqli_query($this->connection, 'SELECT * FROM ' . $table_name);
+        $result = mysqli_query($this->connection, 'SELECT * FROM ' . $table_name . ' ORDER BY use_count DESC');
         return mysqli_fetch_all($result);
     }
 

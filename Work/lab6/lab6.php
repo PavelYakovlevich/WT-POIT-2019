@@ -2,7 +2,7 @@
 function cookie_show()
 {
 
-
+    echo $_COOKIE;
     $s = file_get_contents('cookies.txt');
     if ($s != '') {
         $words = explode(';', $s);
@@ -24,7 +24,7 @@ function cookie_show()
             echo "<th>" . $_COOKIE[$words[$i]] . "</th>";
 
 
-            echo "<th><a href='http://localhost:666/art/Артемка.php?name=" . $words[$i] . "'> удалить</a></th>";
+            echo "<th><a href='http:/localhost:666/WT-POIT-2019/Work/lab6/lab6.php?name=" . $words[$i] . "'> удалить</a></th>";
 
             echo "</tr>";
 
@@ -60,16 +60,15 @@ function cookie_show()
 
 $file = fopen("cookies.txt",'a+');
 
-
+    echo $_POST['name'] . '</br>';
+    echo $_POST['value'] . '</br>';
+    echo $_POST['time'] . '</br>';
 if ((!empty($_POST['name'])) && (!empty($_POST['value'])) && (!empty($_POST['time']) ) ){
 
     $time = (int)$_POST['time'];
 
-    //echo $_POST['name'];
-    //echo $_POST['value'];
-    //echo $_POST['time'];
+    
    if(($_POST['name'] !='') && ($_POST['value'] !='') && ($_POST['time'] !='') && ($time>0)){
-
 
        setcookie($_POST['name'],$_POST['value'],time()+(int)$_POST['time']);
 
@@ -83,7 +82,7 @@ if ((!empty($_POST['name'])) && (!empty($_POST['value'])) && (!empty($_POST['tim
        for ($i=0;$i<count($words)-1;$i++) {
 
 
-           if ($words[$i] == $_POST['name']) {
+           if ($words[$i] === $_POST['name']) {
 
                $f = false;
 
@@ -96,26 +95,20 @@ if ((!empty($_POST['name'])) && (!empty($_POST['value'])) && (!empty($_POST['tim
    else
        echo "Неверный ввод <br>";
 }
+ if (!empty($_GET['name'])){
 
-
-
-
- If (!empty($_GET['name'])){
-
-     setcookie($_GET['name'],'',time()-3600);
+    setcookie($_GET['name'],'',time()-3600);
 
      $s = file_get_contents('cookies.txt');
 
      $words = explode(';', $s);
-
      file_put_contents('cookies.txt', '');
-
      for ($i=0;$i<count($words)-1;$i++) {
 
-         if ($words[$i] == $_GET['name']) {
-             $words[$i]='';
-              continue;
-         }
+        //  if ($words[$i] === $_GET['name']) {
+        //      $words[$i]='';
+        //       continue;
+        //  }
          $words[$i].=';';
      }
 

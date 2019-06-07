@@ -1,10 +1,11 @@
 <?php
-    
-  function generate_code() 
+
+	class Random{
+	public function generate_code() 
 	{    
-		$chars = 'abdefhknrstyz23456789'; // Задаем символы, используемые в капче. Разделитель использовать не надо.
-		$length = rand(4, 7); // Задаем длину капчи, в нашем случае - от 4 до 7
-		$numChars = strlen($chars); // Узнаем, сколько у нас задано символов
+		$chars = 'abdefhknrstyz23456789'; 
+		$length = rand(4, 7); 
+		$numChars = strlen($chars); 
 		$str = '';
 
 		for ($i = 0; $i < $length; $i++) {
@@ -18,3 +19,5 @@
 		// Возвращаем полученный код
 		return implode("", $array_mix);
 	}
+	}  
+  
